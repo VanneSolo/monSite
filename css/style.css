@@ -1,0 +1,65 @@
+body{
+    
+}
+
+.container,header,footer{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container, footer{
+    width: 80%;
+    background-color: aliceblue;
+}
+
+header{
+    margin: 1%;
+}
+
+footer{
+    margin-top: 5px;
+}
+
+#deco, #co{
+    background-color: aliceblue;
+}
+
+p{
+    display: inline-block;
+}
+
+p.un{
+    color: red;
+}
+
+h1{
+    font-size: 75px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+nav.main-menu ul li.main-menu-item{
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block;
+    background-color: antiquewhite;
+}
+
+nav.main-menu ul li.main-menu-item:hover{
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2, p{
+    margin: 50px;
+    font-size: 25px;
+}
