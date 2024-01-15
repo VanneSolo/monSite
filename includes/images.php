@@ -44,3 +44,11 @@
 ?>
 
 <!-- script à remettre dans index.php pour envoyer d'autres images dans la bdd. -->
+
+<?php
+            include ("includes/images.php");
+            if ( isset($_FILES['fic']) )
+            {
+                transfert();
+            }
+        ?>

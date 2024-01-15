@@ -2,5 +2,5 @@
 
 <!-- Pied de la page -->
 <footer>
-    <p>Footer</p>
+    <p>C'est le même footer, lala lala lalala.</p>
 </footer>

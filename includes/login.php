@@ -29,15 +29,3 @@
         }
     }
 ?>
-
-<?php
-    if(isset($_SESSION['pseudo']) && isset($_SESSION['premium'])){
-        $username = $_SESSION['pseudo'];
-        ?>
-        <p>Votre pseudo: <?php echo $_SESSION['pseudo']; ?></p>
-        <p>Compte premium: <?php echo $_SESSION['premium']; ?></p>
-        <?php
-    }else{
-        echo "Veuillez vous connecter à votre compte!";
-    }
-?>

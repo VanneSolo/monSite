@@ -2,7 +2,7 @@
     <div class="container">
 
     <header>
-        <h1 class="titre"><a href="index.php">Le titre de mon site.</a></h1>
+        <h1 class="titre"><a href="index.php">Quelques unes de mes œuvres.</a></h1>
         <nav class="main-menu">
             <ul>
                 <li class="main-menu-item"><a href="index.php">Accueil</a></li>

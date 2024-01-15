@@ -16,12 +16,11 @@
         <?php include_once 'header.php'?>
         
         <!-- Contenu de la page -->
-        <h2>Un sous titre</h2>
-        <p class="un">Déconnexion</p>
+        <h2>Déconnexion</h2>
         <?php 
             //session_destroy sert à detruire la session  
             session_destroy();  
-            echo" Vous êtes  déconnecté";
+            echo "<p>"."Vous êtes  déconnecté"."</p>";
         ?>
 
         <!-- Pied de la page -->
