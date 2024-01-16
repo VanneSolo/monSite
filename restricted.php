@@ -11,20 +11,29 @@
         <?php include_once 'header.php'?>
         
         <!-- Contenu de la page -->
-        <h2>Vous voilà dans l'élite.</h2>
 
         <?php
             if(isset($_SESSION['pseudo']) && isset($_SESSION['premium'])){
-                $username = $_SESSION['pseudo'];
+                if($_SESSION['premium'] == 'non'){
+                    ?>
+                    <h2>Vous auriez pu être dans l'élite.</h2>
+                    <?php
+                    echo "<p>"."Vous n'êtes pas premium!"."</p>";
+                }else if($_SESSION['premium'] == 'oui'){
                 ?>
-                <p>Bienvenue chez les riches, <?php echo $_SESSION['pseudo']; ?>.</p>
-                
-                <div id="camion"> 
-                    <img src="img/renault_premium.jpg" id="vroum"/>
-                </div>
+                    <h2>Vous voilà dans l'élite.</h2>
+                    <p>Bienvenue chez les riches, <?php echo $_SESSION['pseudo']; ?>.</p>
+                    
+                    <div id="camion"> 
+                        <img src="img/renault_premium.jpg" id="vroum"/>
+                    </div>
                 <?php
+                }
             }else{
-                echo "<p>"."Veuillez vous connecter à votre compte!"."</p>";
+                ?>
+                <h2>Vous n'êtes qu'un simple manant.</h2>
+                <?php
+                echo "<p>"."Veuillez créer votre compte!"."</p>";
             }
         ?>
 

@@ -14,7 +14,7 @@
 
                 if(password_verify($conpassword, $p['password'])){
                 //if($conpassword == $p['password']){
-                    echo "Le mot de passe est bon, connexion en cours!";
+                    echo "Le mot de passe est bon, connecté.";
                     $_SESSION['pseudo'] = $p['pseudo'];
                     $_SESSION['premium'] = $p['estpremium'];
                 }else{
